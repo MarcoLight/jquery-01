@@ -13,7 +13,13 @@ $(document).ready(function(){
 
 });
 
-var privato = function(){
-  	$(".insert").append('<form action="/action_page.php">');
-}
 
+  	$("#insertPrivato").click(function(){
+      $(".insert").text("");
+      $(".insert").append('  <label for="fname">Codice Fiscale:</label><br><input type="text" id="fname" name="fname" value="MURTNT78R23H331V"><br>')
+      });
+
+        	$("#insertAzienda").click(function(){
+      $(".insert").text("");
+      $(".insert").append('  <label for="fname">Partita iva:</label><br><input type="text" id="fname" name="fname" value="0987654321"><br>')
+      });
